@@ -143,14 +143,14 @@
         console.log('this: ', $(e.currentTarget).find('.owl-carousel-scrollBar'));
         let index = e.item.index;
         let count = e.item.count;
-        let width_scrollBar = (1 / count) * 100;
+        width_scrollBar = 100 / e.page.size;
         if (index > count) {
             index -= count;
         }
         console.log('count: ', count);
         console.log('index: ', index);
         $(e.currentTarget).find('.owl-carousel-scrollBar').css('width', width_scrollBar + '%');
-        $(e.currentTarget).find('.owl-carousel-scrollBar').css('left', (index * width_scrollBar) * 2 + '%');
+        $(e.currentTarget).find('.owl-carousel-scrollBar').css('left', (100 / e.page.size) * index  + '%');
     }
 
     Scroller.prototype.destroy = function(){
