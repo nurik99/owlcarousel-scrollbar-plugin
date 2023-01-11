@@ -1,5 +1,5 @@
 # owlcarousel-scrollbar-plugin
-owl carousel scrollbar plugin
+# owl carousel scrollbar plugin
 
 setting:
 .owlCarousel({
