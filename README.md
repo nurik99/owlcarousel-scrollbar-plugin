@@ -7,6 +7,7 @@ setting:
 })
 
 css:
+
 .owl-carousel-scrollWrap {
     margin-top: 20px;
     border-radius: 1px;
